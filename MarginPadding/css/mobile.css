@@ -1,0 +1,103 @@
+@media screen and (max-width: 1320px) {
+    #wrapper {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 40px 1200px 400px 100px 50px 100px 50px 20px;
+        grid-template-areas:
+            "hdr hdr hdr"
+            "nv nv nv"
+            "dscbtn dscbtn dscbtn"
+            "asd asd asd"
+            "tag1 tag2 tag3"
+            "tag4 tag5 tag6"
+            "ftr ftr ftr";
+    }
+
+    header {
+        font-weight: bold;
+        background-color: #333333;
+        padding: 10px;
+        grid-area: hdr;
+        font-size: 30pt;
+    }
+
+    nav {
+        margin-left: 0px;
+        background-color: #333333;
+        grid-area: nv;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .nav-links {
+        margin-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: left;
+        background-color: #333333;
+
+    }
+
+    .nav-item a {
+        margin-left: 0;
+        display: inline-block;
+        padding-right: 15px;
+        text-decoration: none;
+        background-color: #333333;
+    }
+
+    aside {
+        background-color: #333333;
+        grid-area: asd;
+        padding: 80px;
+    }
+
+    #pic7 {
+
+        justify-self: center;
+        grid-area: dscbtn;
+        width: 100%;
+        position: absolute;
+        top: 0;
+
+    }
+
+    #dscbtn {
+        padding: 20px;
+        background-color: #333333;
+        grid-area: dscbtn;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 200px;
+        margin-left: 60px;
+
+    }
+
+
+
+
+    footer {
+        background-color: #333333;
+        grid-area: ftr;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+header {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+.nav-links {
+    display: none;
+}
